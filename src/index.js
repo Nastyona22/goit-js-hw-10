@@ -20,7 +20,7 @@ const searchCountry = event => {
     
     
     const country = country_typed.trim().toLowerCase();
-    console.log(country);
+    
    
     if (!country) {
         refs.countryList.innerHTML = " ";
@@ -31,7 +31,6 @@ const searchCountry = event => {
             if (data.length === 1) {
                 onSuccess(data);
             } else if (data.length >= 2 && data.length <= 10) {
-                console.log(data.length);
                countryList(data);
             } else Notify.info(`Too many matches found. Please enter a more specific name.`)
         })  
