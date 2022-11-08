@@ -16,10 +16,10 @@ const refs = {
 const searchCountry = event => {
     event.preventDefault();
 
-    const country_typed = event.target.value;
+    const countryTyped = event.target.value;
     
     
-    const country = country_typed.trim().toLowerCase();
+    const country = countryTyped.trim().toLowerCase();
     
    
     if (!country) {
